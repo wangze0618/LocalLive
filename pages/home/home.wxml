@@ -1,9 +1,20 @@
 <!--pages/home/home.wxml-->
 <view class="home">
-	<swiper circular 	indicator-active-color="#000" autoplay="3000" indicator-dots>
-	<swiper-item  wx:for="{{list}}" wx:key="id">
-		<image mode="heightFix" src="{{item.image}}"></image>
-	</swiper-item>
+	<swiper circular indicator-active-color="#000" autoplay="3000" indicator-dots>
+		<swiper-item wx:for="{{list}}" wx:key="id">
+			<image mode="heightFix" src="{{item.image}}"></image>
+		</swiper-item>
 	</swiper>
-
+	<!-- 分类 -->
+	<view class="category">
+		<view class="category-item" wx:for="{{categoryList}}" wx:key="id">
+			<image src="{{item.icon}}"></image>
+			<text>{{item.name}}</text>
+		</view>
+	</view>
+	<!-- 图片 -->
+	<view class="imgs">
+		<image mode="widthFix" src="../../assets/images/link-01.png"></image>
+		<image mode="widthFix" src="../../assets/images/link-02.png"></image>
+	</view>
 </view>
