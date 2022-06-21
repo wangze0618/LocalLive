@@ -1,0 +1,9 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+	<swiper circular 	indicator-active-color="#000" autoplay="3000" indicator-dots>
+	<swiper-item  wx:for="{{list}}" wx:key="id">
+		<image mode="heightFix" src="{{item.image}}"></image>
+	</swiper-item>
+	</swiper>
+
+</view>
