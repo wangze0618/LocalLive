@@ -1,0 +1,11 @@
+function splitPhone(str) {
+  if (str.length !== 11) return str;
+  str = str.split("");
+  str.splice(3, 0, "-");
+  str.splice(8, 0, "-");
+  return str.join("");
+}
+
+module.exports = {
+  splitPhone: splitPhone,
+};

@@ -1,5 +1,5 @@
 /* pages/home/home.wxss */
-view{
+navigator {
   box-sizing: border-box;
 }
 swiper {
@@ -12,37 +12,36 @@ swiper image {
 .category {
   display: flex;
   justify-content: flex-start;
-	flex-wrap: wrap;
-	border: 1rpx solid #efefef;
-	border-bottom: none;
+  flex-wrap: wrap;
+  border: 1rpx solid #efefef;
+  border-bottom: none;
 }
-.category view {
+.category navigator {
   width: 33.333%;
   height: 200rpx;
-	background-color: #fff;
-	border-right: 1rpx solid #efefef;
-	border-bottom: 1rpx solid #efefef;
-	display: flex;
-	flex-direction: column;
-	justify-content:center;
-	align-items: center;
+  background-color: #fff;
+  border-right: 1rpx solid #efefef;
+  border-bottom: 1rpx solid #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.category .category-item image{
-	width: 65rpx;
-	height: 65rpx;
-	padding-top: 0rpx;
-	padding-bottom: 10rpx;
+.category .category-item image {
+  width: 65rpx;
+  height: 65rpx;
+  padding-top: 0rpx;
+  padding-bottom: 10rpx;
 }
-.category .category-item text{
-	font-size:24rpx;
+.category .category-item text {
+  font-size: 24rpx;
 }
-.imgs{
-	display: flex;
-	padding: 20rpx 5rpx;
-	justify-content: space-around;
+.imgs {
+  display: flex;
+  padding: 20rpx 5rpx;
+  justify-content: space-around;
 }
-.imgs image{
-	width: 45%;
-
+.imgs image {
+  width: 45%;
 }

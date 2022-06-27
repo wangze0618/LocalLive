@@ -1,2 +1,6 @@
 <!--pages/message/message.wxml-->
-<text>pages/message/message.wxml</text>
+<view>
+	<text>count:{{count}}</text>
+	<button type="primary" bindtap="countAdd">+1</button>
+	<view class="bottom"></view>
+</view>

@@ -1,0 +1,18 @@
+<!--pages/shoplist/shoplist.wxml-->
+<view class="shopList">
+	<view class="list-item" wx:key="index" wx:for="{{shopList}}">
+
+		<view class="thumb">
+			<image src="{{item.images[0]}}"></image>
+		</view>
+
+		<view class="info">
+			<text class="shopname">{{item.name}}</text>
+			<text>电话：{{m1.splitPhone(item.phone)}}</text>
+			<text>地址：{{item.address}}</text>
+			<text>营业时间：{{item.businessHours}}</text>
+		</view>
+	</view>
+</view>
+
+<wxs module="m1" src='../../utils/tools.wxs'></wxs>
